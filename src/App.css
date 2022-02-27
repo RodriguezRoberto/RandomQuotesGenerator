@@ -1,5 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  transition: all .3s;
+}
+
 .App {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.quote-box{
+  font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-top: 0;
+  width: 450px;
+  min-height: 150px;
+  box-shadow: 2px 2px 9px 1px rgba(0,0,0,1);
+  -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 2px 9px 1px rgba(0,0,0,1);
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote{
+  display: flex;
+}
+
+.quotation-mark{
+  font-size: 50px;
+  margin-right: 1rem;
+}
+
+.quote-content{
+  padding-top: 1rem;
   text-align: center;
+}
+
+.author{
+  padding: 1rem 0;
+  font-style: italic;
+}
+
+.button{
+  width: 38px;
+  height: 38px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 38px;
+  border-radius: 50%;
+  box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.button:hover{
+  cursor: pointer;
 }
 
 .App-logo {
